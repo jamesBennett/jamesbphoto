@@ -1,0 +1,8 @@
+{
+  "name": "James_Bennett_Photography",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

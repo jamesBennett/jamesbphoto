@@ -1,0 +1,20 @@
+.contactHero {
+  float: left;
+  padding-right: 32px;
+  width: 50%; }
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    .contactHero {
+      margin-left: 32px; } }
+  @media screen and (max-width: 600px) {
+    .contactHero {
+      display: none; } }
+
+@media screen and (max-width: 600px) {
+  .contactInfo {
+    text-align: left;
+    margin: 0 32px; } }
+
+h1.secondaryType {
+  font-weight: 200; }
+
+/*# sourceMappingURL=contact.css.map */

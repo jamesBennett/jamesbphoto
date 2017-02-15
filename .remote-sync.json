@@ -1,0 +1,14 @@
+{
+  "transport": "ftp",
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "ftp.jamesbennettwebdesign.com",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "jamesbennett1",
+  "password": "Panther1!",
+  "watch": []
+}

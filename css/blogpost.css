@@ -1,0 +1,48 @@
+.blogHeader {
+  font-family: lora;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 34px;
+  margin: 32px 0 16px;
+  text-align: center; }
+  @media screen and (max-width: 600px) {
+    .blogHeader {
+      font-size: 18px;
+      line-height: 28px; } }
+  .blogHeader + p {
+    margin-bottom: 16px;
+    font-size: 14px; }
+
+.blogImage {
+  width: 100%; }
+
+.postMessage {
+  margin: 0px 0 16px;
+  text-align: center; }
+  .postMessage p {
+    font-size: 14px;
+    width: 50%;
+    DISPLAY: inline-block;
+    line-height: 20px;
+    word-spacing: 0.5px;
+    font-family: lora;
+    box-sizing: border-box; }
+    @media screen and (max-width: 600px) {
+      .postMessage p {
+        width: auto;
+        margin: 0 24px;
+        box-sizing: border-box; } }
+
+.postNavGroup {
+  margin: 16px 0;
+  text-align: center; }
+
+a[class^="postNavLink"] {
+  font-family: lora;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333; }
+
+/*# sourceMappingURL=blogpost.css.map */

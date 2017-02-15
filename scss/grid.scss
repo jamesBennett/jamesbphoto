@@ -1,0 +1,60 @@
+@import "mixins";
+
+$gridColums: 12;
+$baseGutter: 8px;
+
+.gridRow {
+  display: flex;
+  flex-wrap: wrap;
+  .gridRow {
+    margin: 0 -$baseGutter;
+  }
+}
+
+//main grid classes
+@for $i from 1 through $gridColums {
+  .grid#{$i} {
+    flex: 0 0 #{(100% / $gridColums) * $i};
+    width: #{(100% / $gridColums) * $i};
+    padding: 0 $baseGutter;
+    box-sizing: border-box;
+
+    @if $i >= ($gridColums/2) {
+      @media #{$mediaScreen-med}{
+        flex: 0 0 100%;
+        width: 100%;
+        padding: 0px;
+      }
+    }
+
+    @if $i < $gridColums {
+      @media #{$mediaScreen-small} {
+        flex: 0 0 100%;
+        width: 100%;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+//pushoff classes
+@for $i from 1 through $gridColums {
+  .grid-pushOff#{$i} {
+    margin-left: #{(100% / $gridColums) * $i};
+
+    @media #{$mediaScreen-small}{
+      margin-left: 0;
+    }
+  }
+  @if $i >= ($gridColums/2) {
+    @media #{$mediaScreen-med}{
+      .grid#{$i}[class*="grid-pushOff"] {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.grid-alignItems--center {
+  align-items: center;
+}

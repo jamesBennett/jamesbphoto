@@ -1,0 +1,62 @@
+$mediaScreen-small: "screen and (max-width: 600px)";
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
+
+body {
+  margin: 0;
+  font-family: helvetica neue;
+}
+
+.secondaryType {
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #2087a9;
+}
+
+a, a:visited {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a.link, a.link:visited {
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline;
+    list-style-type: none;
+  }
+}
+
+.align-r {
+  text-align: right;
+}
+
+.align-l {
+  text-align: left;
+}
+
+.align-c {
+  text-align: center;
+}
+
+.pushOff-bottom {
+  margin-bottom: 16px;
+}
+.pushOff-top-mm {
+  margin-top: 32px;
+}
